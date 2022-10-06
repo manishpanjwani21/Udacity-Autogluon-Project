@@ -6,11 +6,11 @@
 
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
 
-I had to fix some syntax errors and review additional documentation in order to run the model as intended. I had some trouble starting the tasks on my local environment and I decided to do everything in the SageMaker studio and managed to improve my results and get a score of below 0.48
+I had to fix some syntax errors and review additional documentation in order to run the model as intended. I had some trouble starting the tasks on my local environment and I decided to do everything in the SageMaker studio and managed to improve my results and get a score of below 0.47553 with hyperparameters .
 
 ### What was the top ranked model that performed?
 
-My top score was achieved my the completing in first run with no features and no tuning og hyperparameters. The score was 0.47553 and was better than the one with the tuning and features. WeightedEnsemble_L3 is the model that performed well
+My top score was achieved my the completing in last run with hyperparameters with features. The score was 0.47553 and was better than the one without anything and only with features. WeightedEnsemble_L3 is the model that performed well
 
 ## Exploratory data analysis and feature creation
 
@@ -20,13 +20,13 @@ I managed to derive from the distriutions that the temperature categories were n
 
 ### How much better did your model preform after adding additional features and why do you think that is?
 
-Adding features reduced the over all score.
+Adding features reduced the over all score but didn't reduced to less than 0.5
 
 ## Hyper parameter tuning
 
 ### How much better did your model preform after trying different hyper parameters?
 
-The model performed worse than the improvement with just the features. I followed the suggested hyperparameter improvement for tabular data provided by autogluon but did not manage to figure out how to additionally tune the parameters in order to improve the result. More background information is needed to fine-tune the model.
+The model performed much better than with just the features. I followed the suggested hyperparameter improvement for tabular data provided by autogluon. More background information is needed to fine-tune the model and reduce the score even lesser
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 
@@ -35,9 +35,9 @@ I would try to figure out more ways to improve on the features as they seem to b
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 
 |model|score|
-"initial"| 0.47553
-"add_features"|0.69671
-"hpo"|1.80546
+"initial"| 1.80776
+"add_features"|0.68131
+"hpo"|0.47553
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 

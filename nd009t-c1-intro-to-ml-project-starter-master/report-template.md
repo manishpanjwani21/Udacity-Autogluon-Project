@@ -10,7 +10,7 @@ I had to fix some syntax errors and review additional documentation in order to 
 
 ### What was the top ranked model that performed?
 
-My top score was achieved my the completing in first run with no features and no tuning og hyperparameters. The score was 0.47553 and was better than the one with the tuning and features
+My top score was achieved my the completing in first run with no features and no tuning og hyperparameters. The score was 0.47553 and was better than the one with the tuning and features. WeightedEnsemble_L3 is the model that performed well
 
 ## Exploratory data analysis and feature creation
 
